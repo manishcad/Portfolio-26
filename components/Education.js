@@ -21,7 +21,7 @@ export default function Education() {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/education/');
+        const response = await fetch('https://manishcad1.vercel.app/api/education/');
         if (!response.ok) {
           throw new Error('Failed to fetch education data.');
         }

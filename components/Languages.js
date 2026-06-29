@@ -12,7 +12,7 @@ export default function Languages() {
   useEffect(() => {
     const fetchLanguages = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/languages/');
+        const response = await fetch('https://manishcad1.vercel.app/api/languages/');
         if (!response.ok) {
           throw new Error('Failed to fetch languages.');
         }

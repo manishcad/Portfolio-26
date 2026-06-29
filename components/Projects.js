@@ -14,7 +14,7 @@ export default function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/projects/');
+        const response = await fetch('https://manishcad1.vercel.app/api/projects/');
         if (!response.ok) {
           throw new Error('Something went wrong!');
         }

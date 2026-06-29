@@ -18,7 +18,7 @@ export default function Contact() {
     setStatus({ submitting: true, success: false, error: false, message: '' });
     
     try {
-      const response = await fetch('http://localhost:8000/api/contact/', {
+      const response = await fetch('https://manishcad1.vercel.app/api/contact/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
